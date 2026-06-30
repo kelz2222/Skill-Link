@@ -1,0 +1,40 @@
+.page { min-height: 100vh; background: var(--gray-50); }
+.header { background: white; border-bottom: 1px solid var(--gray-200); padding: 0 5vw; height: 64px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; box-shadow: var(--shadow); }
+.headerRight { display: flex; align-items: center; gap: 12px; }
+.availToggle { display: flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 50px; border: 1px solid var(--gray-200); font-size: 13px; font-weight: 600; color: var(--gray-700); transition: all 0.15s; }
+.availToggle:hover { border-color: var(--navy); }
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.dotGreen { background: var(--green); }
+.dotGray { background: var(--gray-400); }
+.logoutBtn { font-size: 13px; color: var(--gray-500); padding: 6px 14px; border-radius: 50px; border: 1px solid var(--gray-200); transition: all 0.15s; }
+.logoutBtn:hover { border-color: var(--navy); color: var(--navy); }
+.content { max-width: 1000px; margin: 0 auto; padding: 32px 5vw; }
+.verifyBanner { background: #FEF9C3; color: #854D0E; padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; margin-bottom: 20px; }
+.welcomeTitle { font-family: var(--font-display); font-size: 2rem; color: var(--navy); margin-bottom: 24px; }
+.statsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-bottom: 32px; }
+.statCard { background: white; border-radius: var(--radius); padding: 20px; text-align: center; box-shadow: var(--shadow); }
+.statIcon { font-size: 24px; margin-bottom: 6px; }
+.statValue { font-family: var(--font-display); font-size: 1.6rem; color: var(--navy); }
+.statLabel { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
+.tabs { display: flex; gap: 6px; margin-bottom: 24px; flex-wrap: wrap; }
+.tab { padding: 9px 18px; border-radius: 50px; font-size: 13px; font-weight: 600; color: var(--gray-500); background: white; border: 1px solid var(--gray-200); transition: all 0.15s; }
+.tab:hover { border-color: var(--navy); color: var(--navy); }
+.tabActive { background: var(--navy) !important; color: white !important; border-color: var(--navy) !important; }
+.loading { color: var(--gray-500); padding: 40px 0; }
+.jobGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.jobCard { background: white; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--gray-200); display: flex; flex-direction: column; gap: 10px; }
+.jobTop { display: flex; justify-content: space-between; align-items: flex-start; }
+.jobCustomer { font-weight: 700; font-size: 15px; color: var(--navy); }
+.jobCategory { font-size: 12px; color: var(--gray-500); margin-top: 2px; }
+.jobDesc { font-size: 14px; color: var(--gray-600); line-height: 1.55; }
+.jobMeta { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--gray-400); }
+.jobEarning { background: var(--gray-50); border-radius: var(--radius-sm); padding: 10px 12px; display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--gray-500); }
+.youGet { font-weight: 700; color: var(--green); font-size: 14px; }
+.jobActions { display: flex; gap: 8px; }
+.acceptBtn { flex: 1; padding: 10px; border-radius: 50px; font-size: 13px; font-weight: 600; background: var(--navy); color: white; transition: opacity 0.15s; }
+.acceptBtn:hover { opacity: 0.85; }
+.declineBtn { padding: 10px 16px; border-radius: 50px; font-size: 13px; font-weight: 500; color: var(--red); border: 1px solid #FECACA; transition: background 0.15s; }
+.declineBtn:hover { background: #FEE2E2; }
+.completeBtn { flex: 1; padding: 10px; border-radius: 50px; font-size: 13px; font-weight: 600; background: var(--green); color: white; transition: opacity 0.15s; }
+.completeBtn:hover { opacity: 0.85; }
+.empty { grid-column: 1 / -1; text-align: center; padding: 48px; background: white; border-radius: var(--radius); border: 2px dashed var(--gray-200); color: var(--gray-500); display: flex; flex-direction: column; gap: 10px; align-items: center; }
