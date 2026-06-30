@@ -1,0 +1,36 @@
+.main { min-height: 100vh; padding-bottom: 60px; }
+.loading { text-align: center; padding: 80px; color: var(--gray-500); font-size: 16px; }
+.successBanner { background: #DCFCE7; color: #166534; padding: 16px 5vw; font-weight: 600; font-size: 14px; text-align: center; border-bottom: 1px solid #BBF7D0; }
+.content { max-width: 900px; margin: 0 auto; padding: 32px 5vw; display: flex; flex-direction: column; gap: 20px; }
+.profileCard { background: white; border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: start; }
+.avatar img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; }
+.avatarFallback { width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, var(--navy), var(--navy-light)); display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 700; color: white; font-family: var(--font-display); }
+.nameRow { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; flex-wrap: wrap; }
+.name { font-family: var(--font-display); font-size: 1.8rem; color: var(--navy); }
+.category { color: var(--gray-500); font-size: 15px; margin-bottom: 8px; }
+.ratingRow { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.ratingNum { font-weight: 700; color: var(--gray-900); }
+.reviewCount { color: var(--gray-400); font-size: 13px; }
+.location { color: var(--gray-500); font-size: 14px; margin-bottom: 6px; }
+.rate { font-size: 1.2rem; font-weight: 700; color: var(--bronze); margin-bottom: 10px; }
+.bookBox { background: var(--gray-50); border-radius: var(--radius-sm); padding: 20px; display: flex; flex-direction: column; gap: 10px; min-width: 200px; border: 1px solid var(--gray-200); }
+.bookRate { font-family: var(--font-display); font-size: 2rem; color: var(--navy); }
+.bookRate span { font-size: 1rem; font-weight: 400; color: var(--gray-500); }
+.bookNote { font-size: 11px; color: var(--gray-400); margin-top: -6px; }
+.callBtn { width: 100%; padding: 11px; border-radius: 50px; border: 2px solid var(--gray-200); font-size: 14px; font-weight: 600; color: var(--gray-700); transition: all 0.15s; }
+.callBtn:hover { border-color: var(--navy); color: var(--navy); }
+.section { padding: 24px 28px; }
+.sectionTitle { font-family: var(--font-display); font-size: 1.3rem; color: var(--navy); margin-bottom: 14px; }
+.bio { color: var(--gray-700); font-size: 15px; line-height: 1.75; }
+.skills { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.reviewList { display: flex; flex-direction: column; gap: 16px; }
+.review { padding: 16px 0; border-bottom: 1px solid var(--gray-100); }
+.review:last-child { border-bottom: none; }
+.reviewTop { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.reviewAvatar { width: 36px; height: 36px; border-radius: 50%; background: var(--navy); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; flex-shrink: 0; }
+.reviewName { font-weight: 600; font-size: 14px; color: var(--gray-900); margin-bottom: 3px; }
+.reviewDate { margin-left: auto; font-size: 12px; color: var(--gray-400); flex-shrink: 0; }
+.reviewText { color: var(--gray-600); font-size: 14px; line-height: 1.6; }
+.bookSummary { background: var(--gray-50); border-radius: var(--radius-sm); padding: 12px 16px; display: flex; justify-content: space-between; font-weight: 600; font-size: 15px; color: var(--navy); }
+.bookNote2 { background: #FEF9C3; border-radius: var(--radius-sm); padding: 12px 14px; font-size: 13px; color: #854D0E; }
+@media (max-width: 768px) { .profileCard { grid-template-columns: 1fr; } .bookBox { min-width: unset; } }
