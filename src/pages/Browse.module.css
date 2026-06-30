@@ -1,0 +1,21 @@
+.main { min-height: 100vh; }
+.header { background: var(--navy); padding: 48px 5vw 40px; }
+.title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); color: white; margin-bottom: 8px; }
+.sub { color: rgba(255,255,255,0.6); font-size: 16px; margin-bottom: 24px; }
+.searchInput { width: 100%; max-width: 520px; padding: 14px 20px; border-radius: 50px; border: none; font-size: 15px; outline: none; background: white; color: var(--gray-900); }
+.layout { display: flex; gap: 24px; padding: 32px 5vw; max-width: 1200px; margin: 0 auto; }
+.sidebar { width: 200px; flex-shrink: 0; }
+.filterHead { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 10px; }
+.filterBtn { display: flex; align-items: center; gap: 8px; width: 100%; padding: 10px 12px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; color: var(--gray-700); transition: all 0.15s; margin-bottom: 2px; }
+.filterBtn:hover { background: var(--gray-100); color: var(--navy); }
+.filterActive { background: var(--navy) !important; color: white !important; }
+.toggle { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: var(--gray-700); cursor: pointer; }
+.toggle input { accent-color: var(--navy); width: 16px; height: 16px; }
+.results { flex: 1; }
+.resultCount { font-size: 14px; color: var(--gray-500); margin-bottom: 20px; font-weight: 500; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.loadingGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.skeleton { height: 120px; background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-200) 50%, var(--gray-100) 75%); background-size: 200% 100%; border-radius: var(--radius); animation: shimmer 1.4s infinite; }
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+.empty { text-align: center; padding: 60px 20px; color: var(--gray-500); display: flex; flex-direction: column; gap: 12px; align-items: center; }
+@media (max-width: 640px) { .layout { flex-direction: column; } .sidebar { width: 100%; display: flex; gap: 8px; flex-wrap: wrap; } .filterHead { display: none; } .filterBtn { width: auto; flex-shrink: 0; } }
