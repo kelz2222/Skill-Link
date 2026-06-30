@@ -1,0 +1,25 @@
+.toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
+.filters { display: flex; gap: 6px; flex-wrap: wrap; }
+.filter { padding: 7px 16px; border-radius: 50px; font-size: 13px; font-weight: 500; color: var(--gray-500); background: white; border: 1px solid var(--gray-200); text-transform: capitalize; transition: all 0.15s; }
+.filter:hover { border-color: var(--navy); color: var(--navy); }
+.active { background: var(--navy) !important; color: white !important; border-color: var(--navy) !important; }
+.count { font-size: 13px; color: var(--gray-500); }
+.loading { color: var(--gray-500); padding: 40px 0; }
+.empty { color: var(--gray-500); padding: 40px; text-align: center; }
+.cards { display: flex; flex-direction: column; gap: 12px; }
+.card { background: white; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--gray-200); }
+.cardTop { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 12px; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--navy); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+.info { flex: 1; }
+.name { font-weight: 700; font-size: 15px; color: var(--navy); }
+.meta { font-size: 12px; color: var(--gray-500); margin-top: 2px; }
+.badges { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; flex-shrink: 0; }
+.bio { font-size: 14px; color: var(--gray-600); line-height: 1.55; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--gray-100); }
+.statsRow { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--gray-500); margin-bottom: 14px; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.verifyBtn { padding: 9px 18px; border-radius: 50px; font-size: 13px; font-weight: 600; background: var(--green); color: white; transition: opacity 0.15s; }
+.verifyBtn:hover { opacity: 0.85; }
+.unverifyBtn { padding: 9px 18px; border-radius: 50px; font-size: 13px; font-weight: 500; color: var(--red); border: 1px solid #FECACA; transition: background 0.15s; }
+.unverifyBtn:hover { background: #FEE2E2; }
+.toggleBtn { padding: 9px 18px; border-radius: 50px; font-size: 13px; font-weight: 500; color: var(--navy); border: 1px solid var(--gray-200); transition: all 0.15s; }
+.toggleBtn:hover { border-color: var(--navy); }
