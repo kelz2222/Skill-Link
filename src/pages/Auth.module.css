@@ -1,0 +1,13 @@
+.page { min-height: 100vh; background: linear-gradient(135deg, var(--navy-dark), var(--navy)); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.card { background: white; border-radius: var(--radius-lg); padding: 40px 36px; width: 100%; max-width: 460px; display: flex; flex-direction: column; gap: 16px; box-shadow: var(--shadow-lg); }
+.title { font-family: var(--font-display); font-size: 2rem; color: var(--navy); }
+.sub { color: var(--gray-500); font-size: 15px; margin-top: -8px; }
+.roleToggle { display: flex; gap: 8px; background: var(--gray-100); padding: 5px; border-radius: 50px; }
+.roleBtn { flex: 1; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: 600; color: var(--gray-500); transition: all 0.15s; text-align: center; }
+.roleActive { background: var(--navy); color: white; box-shadow: 0 2px 8px rgba(27,42,94,0.25); }
+.form { display: flex; flex-direction: column; gap: 12px; }
+.error { color: var(--red); font-size: 13px; font-weight: 500; background: #FEE2E2; padding: 10px 14px; border-radius: var(--radius-sm); }
+.switch { text-align: center; font-size: 14px; color: var(--gray-500); }
+.switch a { color: var(--navy); font-weight: 600; }
+.switch a:hover { text-decoration: underline; }
+.adminHint { background: var(--gray-50); border-radius: var(--radius-sm); padding: 10px 14px; font-size: 11px; color: var(--gray-400); text-align: center; border: 1px dashed var(--gray-200); }
